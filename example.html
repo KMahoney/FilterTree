@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+        <script type="text/javascript" src="filtertree.min.js"></script>
+    </head>
+    <body>
+        <input type="text" />
+        <div>
+            <ul id="root">
+                <li>
+                    <span>One</span>
+                    <ul>
+                        <li>Two</li>
+                        <li>Three</li>
+                        <li>Four</li>
+                    </ul>
+                </li>
+                <li>
+                    <span>Five</span>
+                    <ul>
+                        <li>Six</li>
+                        <li>
+                            <span>Seven</span>
+                            <ul>
+                                <li><a href="#">Eight</a></li>
+                                <li>Nine</li>
+                                <li>Ten</li>
+                            </ul>
+                        </li>
+                        <li>Eleven</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <script type="text/javascript">
+            $(function () { $("input").filtertree("#root"); });
+        </script>
+    </body>
+</html>
